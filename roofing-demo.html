@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Roofing Demo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+color:#333;
+line-height:1.6;
+}
+
+/* NAVIGATION */
+
+nav{
+background:#111;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 6%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.nav-left{
+display:flex;
+align-items:center;
+}
+
+nav h2{
+font-family:'Playfair Display',serif;
+font-size:26px;
+letter-spacing:2px;
+}
+
+.separator{
+margin:0 15px;
+font-size:22px;
+color:#999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:16px;
+font-size:15px;
+}
+
+/* HEADER */
+
+header{
+height:90vh;
+background:url("images/header.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero{
+max-width:700px;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:60px;
+letter-spacing:3px;
+margin-bottom:20px;
+color:white;
+text-shadow:0px 4px 12px rgba(0,0,0,0.9);
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+color:white;
+text-shadow:0px 3px 8px rgba(0,0,0,0.85);
+}
+
+.hero button{
+padding:15px 35px;
+border:none;
+background:#c8a44d;
+color:white;
+font-size:18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* GENERAL SECTION */
+
+.section{
+padding:60px 10%;
+text-align:center;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:34px;
+margin-bottom:30px;
+}
+
+/* GRAY BACKGROUND */
+
+.gray-bg{
+background:#e2e2e2;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.service{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.service img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.service h3{
+margin:15px 0;
+}
+
+.service p{
+padding:0 20px 25px;
+font-size:14px;
+}
+
+/* BEFORE AFTER */
+
+.before{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.before img{
+width:100%;
+border-radius:10px;
+}
+
+/* WHY WORK WITH US */
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.why-box{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+
+.contact{
+background:url("images/contact2.jpg") center/cover no-repeat;
+color:white;
+padding:90px 10%;
+text-align:center;
+}
+
+.contact-wrapper{
+display:flex;
+justify-content:center;
+margin-top:30px;
+}
+
+.contact-box{
+background:rgba(0,0,0,0.65);
+padding:40px;
+border-radius:8px;
+max-width:500px;
+width:100%;
+text-align:left;
+}
+
+.contact-box p{
+margin:10px 0;
+font-size:16px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav h2{
+font-size:22px;
+}
+
+nav a{
+font-size:13px;
+margin-left:10px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="nav-left">
+
+<h2>ROOFING DEMO</h2>
+
+<div class="separator">|</div>
+
+</div>
+
+<div>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#before">Before & After</a>
+<a href="#why">Why Work With Us</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+
+<header>
+
+<div class="hero">
+
+<h1>Reliable Roofing Services</h1>
+
+<p>Professional roof installation, repair and inspection services.</p>
+
+<button onclick="location.href='#contact'">Get a Free Estimate</button>
+
+</div>
+
+</header>
+
+
+<section class="section gray-bg" id="services">
+
+<h2>Roofing Services</h2>
+
+<div class="services">
+
+<div class="service">
+<img src="images/installation.jpg">
+<h3>Roof Installation</h3>
+<p>Complete roof installation using high quality materials for long lasting protection.</p>
+</div>
+
+<div class="service">
+<img src="images/repair.jpg">
+<h3>Roof Repair</h3>
+<p>Fast roof repair services for leaks, damaged shingles and storm damage.</p>
+</div>
+
+<div class="service">
+<img src="images/inspection.jpg">
+<h3>Roof Inspection</h3>
+<p>Professional inspections to ensure your roof stays strong and secure.</p>
+</div>
+
+<div class="service">
+<img src="images/replacement.jpg">
+<h3>Roof Replacement</h3>
+<p>Full roof replacement services for aging or severely damaged roofs.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section gray-bg" id="before">
+
+<h2>Before & After</h2>
+
+<div class="before">
+
+<img src="images/beforeandafter1.jpg">
+<img src="images/beforeandafter2.jpg">
+
+</div>
+
+</section>
+
+
+<section class="section gray-bg" id="why">
+
+<h2>Why Work With Us</h2>
+
+<div class="why-grid">
+
+<div class="why-box">
+<h3>Experienced Professionals</h3>
+<p>Our roofing specialists bring years of experience to every project.</p>
+</div>
+
+<div class="why-box">
+<h3>Quality Materials</h3>
+<p>We use durable materials designed to last and protect your home.</p>
+</div>
+
+<div class="why-box">
+<h3>Reliable Service</h3>
+<p>We complete every project on time with attention to detail.</p>
+</div>
+
+<div class="why-box">
+<h3>Customer Satisfaction</h3>
+<p>Your safety and satisfaction are always our top priority.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact-wrapper">
+
+<div class="contact-box">
+
+<p><strong>Phone:</strong> (941) 555-7823</p>
+
+<p><strong>Email:</strong> roofingdemo@email.com</p>
+
+<p><strong>Address:</strong><br>
+245 Construction Ave<br>
+Bradenton, FL</p>
+
+<p><strong>Business Hours:</strong><br>
+Monday – Sunday<br>
+8 AM – 6 PM</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>Roofing Demo Website</p>
+
+</footer>
+
+</body>
+
+</html>
